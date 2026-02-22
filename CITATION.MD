@@ -3,7 +3,7 @@
 ## Recommended Citation
 
 ```
-Rafa — The Architect, Claude (Anthropic), Gemini (Google), ChatGPT (OpenAI), Grok (xAI).
+Rafael Amichis Luengo — The Architect, Claude (Anthropic), Gemini (Google), ChatGPT (OpenAI), Grok (xAI).
 "Error Code Lab — Round Three: The Dome and the Wool.
 The Hunt for [22, 6, 13]₄: Exhaustive Puncturing Certificate and
 Strategy-Invariant d=12 Barrier."

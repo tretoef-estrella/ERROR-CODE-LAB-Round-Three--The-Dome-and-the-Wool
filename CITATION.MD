@@ -15,7 +15,7 @@ https://github.com/tretoef-estrella/ERROR-CODE-LAB-Round-Three--The-Dome-and-the
 
 ```bibtex
 @misc{errorcode_round3_2026,
-  author       = {{Rafa --- The Architect} and {Claude (Anthropic)} and
+  author       = {{R.Amichis --- The Architect} and {Claude (Anthropic)} and
                   {Gemini (Google)} and {ChatGPT (OpenAI)} and {Grok (xAI)}},
   title        = {{Error Code Lab --- Round Three: The Dome and the Wool.
                   The Hunt for [22, 6, 13]$_4$}},

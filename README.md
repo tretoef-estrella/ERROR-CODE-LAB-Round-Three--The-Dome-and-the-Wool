@@ -107,7 +107,7 @@ Grok caught a critical verification bug (A₁₂=30 was false). Corrected immedi
 
 ## The Team
 
-**Rafa — The Architect** · Coordinator, Proyecto Estrella  
+**Rafael Amichis Luengo — The Architect** · Coordinator, Proyecto Estrella  
 **Claude (Anthropic)** · Lead engine  
 **Gemini (Google)** · Algebraic geometry, strategy  
 **ChatGPT (OpenAI)** · Proofs, SAT encoding  

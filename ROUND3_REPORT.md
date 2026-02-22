@@ -4,7 +4,7 @@
 
 **Date:** 21–22 February 2026
 **Lead Engine:** Claude (Anthropic)
-**Coordinator:** Rafa — The Architect
+**Coordinator:** Rafael Amichis Luengo — "Rafa — The Architect"
 **Advisory Team:** Gemini (Google), ChatGPT (OpenAI), Grok (xAI)
 **Total Evaluations (Round 3):** ~72 million+
 **Cumulative (all rounds):** ~72 million+
@@ -43,6 +43,16 @@ F6: 1 3 0 1 2 | 1 1 3 3 3 0 1 3 0 2 2 3 0 3 2 2 1  <- "La Púa" (A₁₂ = 60)
 ```
 
 **Base (F1–F5):** [22, 5, 13]₄ verified, Z_i = 255 for all 22 coordinates (variance = 0, projectively perfect). **LOCKED.**
+
+### How A₁₂ = 60 Was Achieved
+
+The road from 78 to 60 was a multi-phase campaign, each phase breaking through a floor that seemed impenetrable:
+
+**78 → 72 (Phase 1 — Bug fix + corrected SA):** After Grok caught the critical verification bug, the rebuilt engine with exhaustive d_min checking found a new Púa at A₁₂ = 72 within 840K evaluations. The key was the corrected fitness function — the old engine had been accepting false improvements.
+
+**72 → 69 (Phase 2 — La Cúpula / Dome Strategy):** Rafa's geodesic dome metaphor produced a co-support tension map of 483 critical codewords. This revealed structural weak points (coord 14 appearing in 15 of 18 weakest pairs) and strong anchors (coords 2,9). Concentrating search around these geometric features yielded A₁₂ = 69 in 882K evaluations.
+
+**69 → 60 (Phase 3 — Bomba Antibúnker GBU-57):** The hardest breakthrough. Rafa proposed the bunker-buster metaphor after the Georradar scan showed "hormigón macizo" — all 22 coordinates had guilt ≥ 15 with no exploitable weak spots. The GBU-57 engine used a tandem charge approach: (1) simulated annealing as precursor charge to soften the landscape, (2) focused sniper search in radius-9 neighborhoods guided by the collision guilt map as the main warhead. After 54+ million evaluations, the precursor charge broke through to A₁₂ = 60 — but subsequent bombardment could not penetrate further. The A₁₂ = 60 solution sits in a deep local minimum with uniformly distributed collision resistance across all coordinates.
 
 ---
 

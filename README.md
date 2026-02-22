@@ -33,7 +33,7 @@ Before this round, none of the following existed anywhere in the world:
 
 * **The base-stretching paradox — a new phenomenon in coding theory.** Reducing the number of minimum-weight codewords (A₁₃: 81→24) while maintaining d=13 makes the code WORSE for extension (d=11 instead of d=12). The projectively perfect base is the optimal base. This had never been documented.
 
-* **A new best \[22,6,12\]₄ code with A₁₂ = 69.** The closest approach to d=13 ever recorded — only 23 projective collision directions (down from 26). The Dome Strategy that produced it (co-support tension mapping) is a new search methodology.
+* **A \[22,6,12\]₄ code with A₁₂ = 69.** 23 projective collision directions — the closest approach to d=13 found in our campaign (down from A₁₂=78 in Round Two). Note: the existence of [22,6,12]₄ was known since 2001 (codetables.de), but no A₁₂ value was published for that code. We cannot claim ours is the world's best — only the best we found in 72 million evaluations. The Dome Strategy that produced it (co-support tension mapping) is a new search methodology.
 
 * **The most comprehensive elimination map for d₄(22,6) ever assembled.** 20 dead routes, 72 million evaluations, 9 search engines. The entry on codetables.de was last modified on 17 December 2001 — 25 years without progress. This campaign has produced more data on this specific problem than the entire prior literature combined.
 

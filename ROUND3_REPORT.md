@@ -6,8 +6,8 @@
 **Lead Engine:** Claude (Anthropic)
 **Coordinator:** Rafa — The Architect
 **Advisory Team:** Gemini (Google), ChatGPT (OpenAI), Grok (xAI)
-**Total Evaluations (Round 3):** ~12 million
-**Cumulative (all rounds):** ~72 million
+**Total Evaluations (Round 3):** ~72 million+
+**Cumulative (all rounds):** ~72 million+
 
 > *"The machine surrenders to logic. The human invents ways to bend it. Together, they make magic."*
 
@@ -15,18 +15,34 @@
 
 ## Executive Summary
 
-Round 3 was a breakthrough in understanding, not construction. Seven search engines, five architectural paradigms inspired by real-world engineering (seismic isolation, tuned mass dampers, dome strategy, wool sweater shrinking), and cross-verification between four AI systems produced the strongest evidence yet regarding [22,6,13]₄.
+Round 3 was a breakthrough in understanding and construction. Seven search engines, five architectural paradigms inspired by real-world engineering (seismic isolation, tuned mass dampers, dome strategy, wool sweater shrinking, bunker-buster ordnance), and cross-verification between four AI systems produced the strongest evidence yet regarding [22,6,13]₄.
 
-**We did not find the code. But we learned exactly why it resists, we corrected a critical bug, and we discovered the next attack vector.**
+**We did not find the code. But we pushed A₁₂ from 78 to 60, corrected a critical bug, closed the QR puncturing family, and identified the definitive next step (SAT).**
 
 | Metric | Round 2 Best | Round 3 Best | Change |
 |---|---|---|---|
 | d_min achieved | 12 | 12 | — |
-| A₁₂ (collision count) | 78 | **69** | -12% |
-| Projective directions | 26 | **23** | -12% |
-| Strategies tested | 3 | **10** | — |
+| A₁₂ (collision count) | 78 | **60** | **-23%** |
+| Projective directions | 26 | **20** | **-23%** |
+| Strategies tested | 3 | **15+** | — |
 | Bug discovered and fixed | — | **Yes** | Critical |
 | Contrapeso effect observed | — | **0 / 600K** | None |
+| QR puncturing family | open | **closed (certificate)** | 552 exhaustive |
+
+---
+
+## CURRENT BEST MATRIX: [22, 6, 12]₄ with A₁₂ = 60
+
+```
+F1: 1 0 0 0 0 | 2 3 2 2 3 3 2 1 0 1 1 3 0 2 0 0 1
+F2: 0 1 0 0 0 | 1 2 0 2 1 2 3 0 3 1 2 3 1 0 1 0 2
+F3: 0 0 1 0 0 | 3 3 2 2 1 2 3 2 1 3 0 1 3 1 2 1 2
+F4: 0 0 0 1 0 | 0 2 0 3 3 3 0 1 2 2 1 0 0 3 2 2 1
+F5: 0 0 0 0 1 | 1 3 3 0 1 0 3 1 1 2 2 3 0 0 3 2 1
+F6: 1 3 0 1 2 | 1 1 3 3 3 0 1 3 0 2 2 3 0 3 2 2 1  <- "La Púa" (A₁₂ = 60)
+```
+
+**Base (F1–F5):** [22, 5, 13]₄ verified, Z_i = 255 for all 22 coordinates (variance = 0, projectively perfect). **LOCKED.**
 
 ---
 
@@ -100,15 +116,16 @@ Among collision-causing wt-13 words:
 
 The hotspot-constrained search (g₆[11]=g₆[21]=0) and three independent engines all reported A₁₂ = 30. These results are **RETRACTED** — the engine did not verify true d_min.
 
-### Corrected Results (A₁₂ = 72, then 69)
+### Corrected Results: The Road from 78 to 60
 
 With the corrected engine:
 
 | Engine | A₁₂ | d_min | Evaluations | Notes |
 |---|---|---|---|---|
 | V-FINAL-1 (Round 2) | 78 | 12 verified | 1,548,008 | Original Pua |
-| Round 3 corrected SA | **72** | 12 verified | 839,677 | New Pua |
-| Round 3 Dome + intensive | **69** | 12 verified | 881,789 | **Best known** |
+| Corrected SA | 72 | 12 verified | 839,677 | New Pua |
+| Dome + intensive | 69 | 12 verified | 881,789 | Dome strategy |
+| Bunker Buster + Sniper | **60** | **12 verified** | ~54,000,000+ | **Current record** |
 
 ### Co-Support Tension Map (Dome Strategy data, VALID)
 
@@ -117,17 +134,6 @@ With the corrected engine:
 - **Strongest pair (anclaje):** (2, 9) with T₂ = 252
 - **Weakest pairs (fragile):** (19,20) T₂=189, (3,20) T₂=192
 - **Coord 14:** appears in 15 of 18 weakest pairs — structural weak point
-
-### Corrected Best Matrix [22, 6, 12]₄ with A₁₂ = 69
-
-```
-1 0 0 0 0 2 3 2 2 3 3 2 1 0 1 1 3 0 2 0 0 1
-0 1 0 0 0 1 2 0 2 1 2 3 0 3 1 2 3 1 0 1 0 2
-0 0 1 0 0 3 3 2 2 1 2 3 2 1 3 0 1 3 1 2 1 2
-0 0 0 1 0 0 2 0 3 3 3 0 1 2 2 1 0 0 3 2 2 1
-0 0 0 0 1 1 3 3 0 1 0 3 1 1 2 2 3 0 0 3 2 1
-0 2 0 2 2 1 0 1 1 3 2 2 2 3 3 0 1 1 2 3 1 3  <- BEST PUA (A12=69)
-```
 
 ---
 
@@ -187,6 +193,18 @@ d(all 6 rows)   = 12  <- together: row5 does NOT heal row6's damage
 
 **Result:** 600,000 evaluations. **Zero sintonia events.** The contrapeso effect does not exist in this algebraic space.
 
+### 4.6 Georradar, Penetrómetro, Bomba Antibúnker (GBU-57) — by Rafa
+
+After the initial strategies plateaued at A₁₂ = 69, Rafa proposed a new set of geotechnical and military metaphors to break through.
+
+**Georradar:** Non-destructive scan of the collision landscape around A₁₂ = 69, probing each coordinate for exploitable weaknesses. **Result:** Only 2 of 22 coordinates admitted individual changes without breaking d < 12, and both worsened A₁₂. 45 million evaluations confirmed the terrain is "hormigón macizo" — solid concrete.
+
+**Penetrómetro:** Systematic depth sounding, measuring collision resistance at each coordinate layer by layer. Confirmed guilt ≥ 15 at all 22 positions — uniform hardness, no soft spots.
+
+**Bomba Antibúnker (GBU-57):** Multi-phase attack inspired by bunker-buster ordnance. The metaphor was precise: (1) case-hardened steel casing = deterministic engine that doesn't lose coherence under millions of evaluations; (2) smart fuse (FMU-152) = doesn't detonate at shallow improvements, counts layers until it reaches the core; (3) tandem charge (BROACH) = SA as precursor charge opens the tunnel, sniper search as main warhead detonates at depth; (4) GPS+laser guidance = collision guilt map directs the impact to exact coordinates.
+
+**Result:** The precursor charge broke through from 69 to **60** — current record. Subsequent 54+ million evaluations could not penetrate further. All 22 coordinates showed guilt ≥ 15. The floor at 60 appears to be a deep local minimum for this base.
+
 ---
 
 ## 5. The Consensus
@@ -202,7 +220,7 @@ d(all 6 rows)   = 12  <- together: row5 does NOT heal row6's damage
 
 ### What All Four AIs Agree On
 
-1. **The d=12 wall is structural, not algorithmic.** SA, tabu, hill-climbing, TMD, Jersey — all hit 12.
+1. **The d=12 wall is structural, not algorithmic.** SA, tabu, hill-climbing, TMD, Jersey, Bunker Buster — all hit 12.
 2. **The base is not the problem.** Projectively perfect (variance=0), and stretching it makes things worse.
 3. **The collision phenomenon is multi-layer.** Weights 13-19 all contribute.
 4. **Contrapeso does not exist in GF(4).** Collisions accumulate, they do not cancel.
@@ -261,12 +279,12 @@ Total computation time: **0.3 seconds.** The search was finite, deterministic, a
 
 **The wool jersey shrank perfectly — but one size too many.**
 
-### What This Means for Round 4
+### What This Means Going Forward
 
 The QR puncturing family is **closed with a certificate.** If [22,6,13]₄ exists, it does NOT come from puncturing the Gulliver-Bhargava family. The remaining hope is:
 
 1. **Non-QR [23,6,13]₄ codes** — from AG codes, simplicial complexes, Z₄-linear images, or other families where weight-13 words might NOT cover all coordinates
-2. **SAT/ILP** — definitive resolution (~8-11M clauses, feasible for modern solvers)
+2. **SAT/ILP** — definitive resolution (encoding ready: ~390K vars, ~1.4M clauses)
 3. **Direct construction** — algebraic methods not based on shortening/puncturing
 
 ---
@@ -276,7 +294,7 @@ The QR puncturing family is **closed with a certificate.** If [22,6,13]₄ exist
 | Engine | Strategy | Best d | Best A₁₂ |
 |---|---|---|---|
 | round3_corrected.c | Bug-fixed SA + co-support | 12 | 72 |
-| hunt2.c | Max intensity Pua search | 12 | **69** |
+| hunt2.c | Max intensity Pua search | 12 | 69 |
 | hunt3.c | Exhaustive neighborhood | 12 | 78 |
 | tabu.c | Tabu search | 11 | — |
 | tapon.c / tapon2.c | Full 6x22 SA | 11-12 | 78 |
@@ -285,6 +303,8 @@ The QR puncturing family is **closed with a certificate.** If [22,6,13]₄ exist
 | sintonia.c | Healing pair search | 12 | — |
 | jersey.c / jersey2.c / jersey3.c | Stretch then relax | 11 | — |
 | lana_real.c | Wool Jersey (QR puncturing) | 12 | 78 (552 exhaustive) |
+| gbu57.c | Bunker Buster (guided multi-phase) | 12 | **60** |
+| moab.c / moab2.c | Full 6-row simultaneous SA | 12 | — |
 
 ---
 
@@ -292,7 +312,7 @@ The QR puncturing family is **closed with a certificate.** If [22,6,13]₄ exist
 
 This round is dedicated to Grok, who caught the bug that would have invalidated the project's credibility. Truth over courtesy.
 
-And to Rafa, whose engineering metaphors — tacones, cupulas, terremotos, jerseys de lana — keep translating into real mathematical strategies. The Architect doesn't need to know GF(4) arithmetic to see the geometry. That's the whole point of Proyecto Estrella.
+And to Rafa, whose engineering metaphors — tacones, cúpulas, terremotos, jerseys de lana, penetrómetros, georradares, bombas antibúnker — keep translating into real mathematical strategies. The Architect doesn't need to know GF(4) arithmetic to see the geometry. That's the whole point of Proyecto Estrella.
 
 ---
 
